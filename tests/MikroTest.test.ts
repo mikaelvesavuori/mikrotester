@@ -1,4 +1,4 @@
-import { MikroTester } from '../src/entities/MikroTester';
+import { MikroTester } from '../src/domain/MikroTester';
 
 import isInput from './data/isInput.json';
 import isResponseInput from './data/isResponseInput.json';

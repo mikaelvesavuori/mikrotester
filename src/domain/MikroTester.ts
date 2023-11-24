@@ -9,7 +9,28 @@ import { displayFailureResults, displayFinalResults } from '../frameworks/displa
 import { fetchData } from '../frameworks/fetchData';
 
 /**
- * @description TODO
+ * @description MikroTester lets you do simple integration testing.
+ *
+ * @example
+ * import { MikroTester } from 'mikrotester';
+ *
+ * const tests = [
+ *   {
+ *     "endpoint": "https://swapi.dev/api/people/1",
+ *     "method": "GET",
+ *     "assertions": [
+ *       {
+ *         "name": "The status code is 200",
+ *         "statusCodeIs": 200
+ *       }
+ *     ]
+ *   }
+ * ];
+ *
+ * const mikrotester = new MikroTester();
+ * const results = await mikrotester.runTests(tests);
+ *
+ * console.log(results);
  */
 export class MikroTester {
   /**

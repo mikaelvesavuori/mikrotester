@@ -18,6 +18,8 @@ MikroTester allows you to pass in an array of simple-to-define tests. For each e
 
 The result will always contain a boolean (true/false) `success` state for each assertion.
 
+[Native Fetch](https://nodejs.org/dist/latest-v18.x/docs/api/globals.html#fetch) is used, so you will need a Node version newer than 18 or so.
+
 ## Usage
 
 MikroTester is very simple to use. We'll use the [Star Wars API](https://swapi.dev) to demonstrate just how easy it is!
@@ -44,9 +46,15 @@ const results = await mikrotester.runTests(tests);
 console.log(results);
 ```
 
-Next, let's check out all the ways you can do your integration testing.
+So, what's going on here?
 
-### Matches
+- The `endpoint` should be self-explanatory.
+- The `method` can be `GET`, `POST`, `PUT`, `PATCH` and `DELETE`.
+- The `assertions` always contain a `name` (what does the test do?) and one of several types: `statusCodeIs`, `is`, or `matches`.
+
+Next, let's check out all the ways you can do those assertions.
+
+### Matches (`matches`)
 
 Use a [JSON Schema](https://json-schema.org) to check your response. This is a good, solid option for more mature tests.
 
@@ -146,7 +154,7 @@ Use a [JSON Schema](https://json-schema.org) to check your response. This is a g
 ]
 ```
 
-### Is object
+### Is object (`is`)
 
 Check for an exact match of the object. For very stable systems this will work just fine, but it also creates quite a bit of coupling between test and reality.
 
@@ -190,7 +198,7 @@ Check for an exact match of the object. For very stable systems this will work j
 ]
 ```
 
-### Is response
+### Is response (`is`)
 
 Check for an exact string response. Good for simple services that give short, stable messages.
 
@@ -209,7 +217,7 @@ Check for an exact string response. Good for simple services that give short, st
 ]
 ```
 
-### Status code is
+### Status code is (`statusCodeIs`)
 
 Verifies that the status code is the expected one.
 

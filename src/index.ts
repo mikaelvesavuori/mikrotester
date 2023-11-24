@@ -1,1 +1,1 @@
-export * from './entities/MikroTester';
+export * from './domain/MikroTester';
