@@ -1,10 +1,10 @@
-## General guidelines for contributing code
+# General guidelines for contributing code
 
 You are very welcome to contribute to the project! Pull requests welcome, as well as issues or plain messages.
 
 Respect the below and I will be happy to merge your work and credit you for it.
 
-### Style and structure
+## Style and structure
 
 - Follow the style and conventions already in place.
 - _As always, write clean, easy-to-read code. Prefer being slightly more verbose and semantic than being "efficient" and terse_, if such a choice is necessary. Write as if someone is going to contribute on top of your code base tomorrow without knowing you or your work.
@@ -18,10 +18,10 @@ Respect the below and I will be happy to merge your work and credit you for it.
 5. Frameworks
 6. Messages, errors, warnings (separated)
 
-### Tests
+## Tests
 
 - **Always include tests for additions or changes**. Aim for 100% coverage, but set a minimum bar to cover at least the main functionality. `MikroTester` should ideally have total code coverage of 95% or more. Your contribution will affect that score, so aim to keep it high(er)! :)
-- It's encouraged to place any test data in the `testdata/` folder.
+- It's encouraged to place any test data in the `tests/data/` folder.
 - **Always check that all tests (including your new ones) are passing before making a pull request**.
 
 ### Error handling

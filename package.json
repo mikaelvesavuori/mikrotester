@@ -1,7 +1,7 @@
 {
   "name": "mikrotester",
   "description": "Smooth, minimalist integration testing for humans.",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "author": "Mikael Vesavuori",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "start": "npx ts-node src/index.ts",
-    "test": "npx jest tests --collectCoverage --runInBand --no-cache",
+    "test": "npx jest tests --collectCoverage",
     "build": "npm run clean && npx tsc --project tsconfig.build.json",
     "clean": "rm -rf lib",
     "package": "npm pack",
