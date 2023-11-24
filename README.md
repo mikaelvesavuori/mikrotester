@@ -257,4 +257,4 @@ The response for all of the calls will be:
 
 ## License
 
-MikroTester is licensed under the MIT license.
+MikroTester is licensed under the [MIT license](./LICENSE).
