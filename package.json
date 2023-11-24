@@ -1,19 +1,19 @@
 {
-  "name": "mikrotest",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "mikrotester",
+  "description": "Smooth, minimalist integration testing for humans.",
+  "version": "0.0.2",
   "author": "Mikael Vesavuori",
   "license": "MIT",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikaelvesavuori/mikrotest.git"
+    "url": "git+https://github.com/mikaelvesavuori/mikrotester.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/mikaelvesavuori/mikrotest/issues"
+    "url": "https://github.com/mikaelvesavuori/mikrotester/issues"
   },
-  "homepage": "https://github.com/mikaelvesavuori/mikrotest#readme",
+  "homepage": "https://github.com/mikaelvesavuori/mikrotester#readme",
   "files": [
     "/lib",
     "!/lib/**/*.map",

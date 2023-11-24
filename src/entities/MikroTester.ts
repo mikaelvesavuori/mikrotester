@@ -11,7 +11,7 @@ import { fetchData } from '../frameworks/fetchData';
 /**
  * @description TODO
  */
-export class MikroTest {
+export class MikroTester {
   /**
    * @description Run all tests.
    */
@@ -37,7 +37,7 @@ export class MikroTest {
   private async getAllTests(testInputs: TestInput[]) {
     const allTests: Promise<TestResult>[] = [];
 
-    const mikrotest = new MikroTest();
+    const mikrotester = new MikroTester();
 
     for (const testInput of testInputs) {
       const { assertions } = testInput;
@@ -49,7 +49,7 @@ export class MikroTest {
             const actual = await fetchData(endpoint, method, headers, body, urlParams);
             if (!actual) throw new Error('❌ No response!');
 
-            const { success, status, response, expected } = mikrotest.assert(assertion, actual);
+            const { success, status, response, expected } = mikrotester.assert(assertion, actual);
             resolve({ name: assertion.name, success, status, response, expected });
           })
         );

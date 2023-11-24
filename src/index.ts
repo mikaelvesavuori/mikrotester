@@ -1,1 +1,1 @@
-export * from './entities/MikroTest';
+export * from './entities/MikroTester';
