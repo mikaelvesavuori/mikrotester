@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "start": "npx ts-node src/index.ts",
-    "test": "npx jest tests --collectCoverage",
+    "test": "npx jest tests --collectCoverage --runInBand --no-cache",
     "build": "npm run clean && npx tsc --project tsconfig.build.json",
     "clean": "rm -rf lib",
     "package": "npm pack",
