@@ -1,0 +1,12 @@
+[
+  {
+    "endpoint": "https://swapi.dev/api/people/3",
+    "method": "GET",
+    "assertions": [
+      {
+        "name": "The message matches",
+        "is": "There is a message here"
+      }
+    ]
+  }
+]

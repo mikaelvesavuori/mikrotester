@@ -1,0 +1,11 @@
+[
+  {
+    "endpoint": "https://swapi.dev/api/people/5",
+    "method": "GET",
+    "assertions": [
+      {
+        "name": "No assertion"
+      }
+    ]
+  }
+]

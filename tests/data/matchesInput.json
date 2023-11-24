@@ -1,0 +1,93 @@
+[
+  {
+    "endpoint": "https://swapi.dev/api/people/1",
+    "method": "GET",
+    "assertions": [
+      {
+        "name": "The result matches the JSON Schema",
+        "matches": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "height": {
+              "type": "string"
+            },
+            "mass": {
+              "type": "string"
+            },
+            "hair_color": {
+              "type": "string"
+            },
+            "skin_color": {
+              "type": "string"
+            },
+            "eye_color": {
+              "type": "string"
+            },
+            "birth_year": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "homeworld": {
+              "type": "string"
+            },
+            "films": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "species": {
+              "type": "array",
+              "items": {}
+            },
+            "vehicles": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "starships": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "created": {
+              "type": "string"
+            },
+            "edited": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "birth_year",
+            "created",
+            "edited",
+            "eye_color",
+            "films",
+            "gender",
+            "hair_color",
+            "height",
+            "homeworld",
+            "mass",
+            "name",
+            "skin_color",
+            "species",
+            "starships",
+            "url",
+            "vehicles"
+          ]
+        }
+      }
+    ]
+  }
+]

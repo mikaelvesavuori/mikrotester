@@ -1,0 +1,54 @@
+{
+  "name": "mikrotest",
+  "description": "TODO",
+  "version": "0.0.1",
+  "author": "Mikael Vesavuori",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelvesavuori/mikrotest.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mikaelvesavuori/mikrotest/issues"
+  },
+  "homepage": "https://github.com/mikaelvesavuori/mikrotest#readme",
+  "files": [
+    "/lib",
+    "!/lib/**/*.map",
+    "!/tests"
+  ],
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "test": "npx jest tests --collectCoverage",
+    "build": "npm run clean && npx tsc --project tsconfig.build.json",
+    "clean": "rm -rf lib",
+    "package": "npm pack",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install",
+    "docs": "npm run docs:clean && npm run docs:typedoc",
+    "docs:clean": "rm -rf docs",
+    "docs:typedoc": "npx typedoc --entryPoints src --entryPointStrategy expand --exclude '**/*+(test).ts' --externalPattern 'node_modules/**/*' --excludeExternals --out docs/"
+  },
+  "dependencies": {
+    "ajv": "8"
+  },
+  "devDependencies": {
+    "@types/jest": "29",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "6",
+    "@typescript-eslint/parser": "6",
+    "eslint": "8",
+    "eslint-config-prettier": "9",
+    "eslint-plugin-prettier": "5",
+    "husky": "8",
+    "jest": "29",
+    "msw": "2",
+    "prettier": "3",
+    "ts-jest": "29",
+    "ts-node": "10",
+    "typedoc": "^0.25.3",
+    "typescript": "5"
+  }
+}

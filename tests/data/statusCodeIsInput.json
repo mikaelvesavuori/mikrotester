@@ -1,0 +1,12 @@
+[
+  {
+    "endpoint": "https://swapi.dev/api/people/1",
+    "method": "GET",
+    "assertions": [
+      {
+        "name": "The status code is 200",
+        "statusCodeIs": 200
+      }
+    ]
+  }
+]
