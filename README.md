@@ -2,7 +2,7 @@
 
 **Smooth, minimalist integration testing for humans**.
 
-![Build Status](https://github.com/mikaelvesavuori/mikrotester/workflows/main/badge.svg) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikaelvesavuori_mikrotester&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mikaelvesavuori_mikrotester) [![codecov](https://codecov.io/gh/mikaelvesavuori/mikrotester/graph/badge.svg?token=3EWQNXW7JG)](https://codecov.io/gh/mikaelvesavuori/mikrotester) [![Maintainability](https://api.codeclimate.com/v1/badges/ff2d1ee57636a9afe44e/maintainability)](https://codeclimate.com/github/mikaelvesavuori/mikrotester/maintainability)
+![Build Status](https://github.com/mikaelvesavuori/mikrotester/workflows/main/badge.svg) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikaelvesavuori_mikrotester&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mikaelvesavuori_mikrotester) [![codecov](https://codecov.io/gh/mikaelvesavuori/mikrotester/graph/badge.svg?token=3EWQNXW7JG)](https://codecov.io/gh/mikaelvesavuori/mikrotester) [![Maintainability](https://api.codeclimate.com/v1/badges/00eea783405eaaab55e3/maintainability)](https://codeclimate.com/github/mikaelvesavuori/mikrotester/maintainability)
 
 ---
 
@@ -257,4 +257,4 @@ The response for all of the calls will be:
 
 ## License
 
-MikroTester is licensed under the MIT license.
+MikroTester is licensed under the [MIT license](./LICENSE).
