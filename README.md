@@ -52,6 +52,8 @@ So, what's going on here?
 - The `method` can be `GET`, `POST`, `PUT`, `PATCH` and `DELETE`.
 - The `assertions` always contain a `name` (what does the test do?) and one of several types: `statusCodeIs`, `is`, or `matches`.
 
+You can also send in a `headers` object if you want and need it!
+
 Next, let's check out all the ways you can do those assertions.
 
 ### Matches (`matches`)
